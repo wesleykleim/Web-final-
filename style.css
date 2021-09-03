@@ -1,0 +1,49 @@
+input[type="checkbox"]
+{
+    display: none;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: url(https://www.coliseugeek.com.br/wp-content/uploads/2021/06/7-hackers-que-nao-se-deram-NADA-bem-nos-jogos.jpg);
+}
+
+nav
+{
+    background-color: rgba(16,16,16,.5);
+    width: 350px;
+    height: 100%;
+    left: -350px;
+    position: absolute;
+    transition: all .5s;
+}
+
+input[type="checkbox"]:checked ~ nav
+{
+
+    transform: translateX(350px);
+}
+
+ul{
+    top:40px;
+    position: absolute;
+    width: 100%;
+}
+a{
+    display: block;
+    padding: 20px 5px;
+    color: white;
+}
+
+a:hover{
+    background-color: rgb(176,224,230);
+    color: black;
+    width: 290px;
+}
+
+label{
+    padding: 15px;
+    position: absolute;
+    z-index: 1;
+}
+
+
